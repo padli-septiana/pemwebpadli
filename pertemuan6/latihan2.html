@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logika</title>
+</head>
+<body>
+    <h1>evaluasi nilai score</h1>
+    <input type="number" id="score" placeholder="score">
+    <button onclick="hitung()">Hitung</button>
+    <h3 id="hasil"></h3>
+    
+    <script>
+        function hitung() {
+            const score = document.getElementById('score').value;
+            let hasil = '';
+            if (score >= 90) {
+                hasil = 'Selamat! Anda mendapatkan nilai A';
+            } else if (score >= 80) {
+                hasil = 'Anda mendapatkan nilai B';
+            } else if (score >= 70) {
+                hasil = 'Anda mendapatkan nilai C';
+            } else if (score >= 60) {
+                hasil = 'Anda mendapatkan nilai D';
+            } else {
+                hasil = 'Anda mendapatkan nilai E';
+            }
+            document.getElementById('hasil').innerText = hasil;
+        }
+    </script>
+</body>
+</html>

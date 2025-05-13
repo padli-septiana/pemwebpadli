@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas segitiga</title>
+</head>
+<body>
+    <h1>Luas segitiga</h1>
+    <input type="number" id="alas" placeholder="Alas">
+    <input type="number" id="tinggi" placeholder="Tinggi">
+    <button onclick="hitung()">Hitung</button>
+    <div style="display: flex; gap: 4px;">
+        <h2>Hasil: </h2>
+        <h2 id="hasil"></h2>
+    </div>
+
+    <script>
+        function hitung() {
+            const alas = document.getElementById('alas').value;
+            const tinggi = document.getElementById('tinggi').value;
+            const hasil = 0.5 * alas * tinggi;
+            document.getElementById('hasil').innerText = hasil;
+        }
+    </script>
+</body>
+</html>
