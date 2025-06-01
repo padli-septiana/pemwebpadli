@@ -87,6 +87,9 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
                 <a href="../index.php" class="bg-zinc-700 hover:bg-zinc-600 text-white px-4 py-2 rounded transition">Home</a>
             </div>
         </div>
+        <div class="flex justify-end">
+            <input type="text" id="search" placeholder="Cari NIM atau Nama..." class="px-4 py-2 mb-4 rounded bg-zinc-800 border border-zinc-600 w-full max-w-xs">
+        </div>
         <div class="overflow-x-auto rounded-lg">
             <table class="min-w-full bg-zinc-800">
                 <thead>
