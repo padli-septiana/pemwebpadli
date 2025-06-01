@@ -1,12 +1,10 @@
 <?php
-// index.php
 session_start();
 $isLogin = isset($_SESSION['login']) && $_SESSION['login'] === true;
 $name = $_SESSION['user']['nama'] ?? 'Guest';
 
 include '../controller/connection.php';
 
-// Ambil parameter page dan search
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int)$_GET['page'] : 1;
 $search = isset($_GET['search']) ? trim($_GET['search']) : '';
 $limit = 2;
@@ -18,12 +16,10 @@ if ($search !== '') {
     $where = "WHERE nim LIKE '%$searchEscaped%' OR nama LIKE '%$searchEscaped%'";
 }
 
-// Ambil data mahasiswa
 $query = "SELECT * FROM mahasiswa $where ORDER BY nim ASC LIMIT $limit OFFSET $offset";
 $result = mysqli_query($connection, $query);
 $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-// Hitung total
 $countQuery = "SELECT COUNT(*) as total FROM mahasiswa $where";
 $countResult = mysqli_query($connection, $countQuery);
 $totalRows = (int)mysqli_fetch_assoc($countResult)['total'];
