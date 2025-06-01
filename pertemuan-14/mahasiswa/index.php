@@ -77,12 +77,15 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 
 <body class="bg-zinc-900 text-zinc-100">
     <div class="container mx-auto py-10">
-        <div class="">
-            <h1 class="text-3xl text-cyan-400 font-bold">Data Mahasiswa</h1>
-            <p>Halo, <?= htmlspecialchars($name) ?></p>
-        </div>
-        <div class="flex justify-end">
-            <input type="text" id="search" placeholder="Cari NIM atau Nama..." class="px-4 py-2 mb-4 rounded bg-zinc-800 border border-zinc-600 w-full max-w-xs">
+        <div class="flex flex-col md:flex-row md:justify-between items-center mb-8 gap-4">
+            <div class="space-y-2">
+                <h1 class="text-3xl font-bold text-cyan-400">Data Mahasiswa</h1>
+                <p>Halo, <?= htmlspecialchars($name); ?></p>
+            </div>
+            <div class="flex gap-2">
+                <a href="tambah.php" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded transition">Tambah Data</a>
+                <a href="../index.php" class="bg-zinc-700 hover:bg-zinc-600 text-white px-4 py-2 rounded transition">Home</a>
+            </div>
         </div>
         <div class="overflow-x-auto rounded-lg">
             <table class="min-w-full bg-zinc-800">
