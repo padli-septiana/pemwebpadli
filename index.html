@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Padli - 2302061</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Selamat datang, ini adalah list tugas untuk mata kuliah Pemrograman Web</h1>
-    <table>
-        <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Muhammad Padli Septiana</td>
-        </tr>
-        <tr>
-            <td>NIM</td>
-            <td>;</td>
-            <td>2302061</td>
-        </tr>
-        <tr>
-            <td>Kelas</td>
-            <td>:</td>
-            <td>RPL 4A</td>
-        </tr>
-    </table>
 
-    <h2>List tugas:</h2>
-    <ul>
-        <li>Pertemuan  3: <a href="pertemuan3/login.html">web online</a> | <a href="https://github.com/padli-septiana/pemwebpadli/tree/main">repositories</a></li>
-        <li>Pertemuan  5: <a href="pertemuan5/login.html">web online</a> | <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan5">repositories</a></li>
-        <li>Pertemuan  6: <a href="pertemuan6/index.html">web online</a> | <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan6">repositories</a></li>
-        <li>Pertemuan  9: <a href="pertemuan9/">web online</a> | <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan9">repositories</a></li>
-        <li>Pertemuan  11: <a href="pertemuan-11/">web online</a> | <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan-11">repositories</a></li>
-        <li>Pertemuan  12: <a href="pertemuan-12/">web online</a> | <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan-12">repositories</a></li>
-    </ul>
+<body class="bg-gray-900 text-gray-100">
+    <div class="container mx-auto py-10">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-cyan-400">Selamat Datang</h1>
+            <p class="text-gray-300 mt-2">Ini adalah list tugas untuk mata kuliah Pemrograman Web</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-8">
+            <table class="w-full text-left text-gray-300">
+                <tbody>
+                    <tr>
+                        <td class="py-2 font-bold">Nama</td>
+                        <td class="py-2">:</td>
+                        <td class="py-2">Muhammad Padli Septiana</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 font-bold">NIM</td>
+                        <td class="py-2">:</td>
+                        <td class="py-2">2302061</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 font-bold">Kelas</td>
+                        <td class="py-2">:</td>
+                        <td class="py-2">RPL 4A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold text-cyan-400 mb-4">List Tugas</h2>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 3:</p>
+                    <a href="pertemuan3/login.html" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 5:</p>
+                    <a href="pertemuan5/login.html" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan5" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 6:</p>
+                    <a href="pertemuan6/index.html" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan6" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 9:</p>
+                    <a href="pertemuan9/" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan9" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 11:</p>
+                    <a href="pertemuan-11/" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan-11" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 12:</p>
+                    <a href="pertemuan-12/" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan-12" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+                <li class="flex items-center gap-4">
+                    <p class="text-gray-300">Pertemuan 14:</p>
+                    <a href="pertemuan-14/" class="bg-cyan-400 text-white px-4 py-2 rounded hover:bg-cyan-500 transition">Web Online</a>
+                    <a href="https://github.com/padli-septiana/pemwebpadli/tree/main/pertemuan-14" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition">Repositories</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
